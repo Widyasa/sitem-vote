@@ -5,18 +5,22 @@ export default class ScoreboardView{
         this.root.innerHTML = `
             
         
-            <div class="d-flex flex-row justify-content-center pt-3 " style="gap: 120px">
-                <button class="btn nameOne the-btn" data-for-player="one"><img src="img/zyro-image.png" style="width: 200px" alt=""></button>
-                <button class="btn nameTwo the-btn" data-for-player="two"><img src="img/zyro-image%20(1).png" style="width: 200px" alt=""></button>
+            <div class="row justify-content-center pict-wrapper mb-5 " ">
+                <button class=" the-pict the-btn col-6" data-for-player="one"><img src="img/zyro-image.png" style="width: 200px" alt=""></button>
+                <button class=" the-pict the-btn col-6" data-for-player="two"><img src="img/zyro-image%20(1).png" style="width: 200px" alt=""></button>
             </div>
-            <div class="d-flex flex-row justify-content-between mt-3" style="margin: 300px">
-                <p class="display-1 score-one the-score fw-semibold" data-for-player="one">0</p>
-                <p class="display-1 score-two the-score fw-semibold" data-for-player="two">0</p>
+       
+            <div class="d-flex flex-row justify-content-center mt-5 score-wrapper">
+                <p class="display-1 score-one the-score fw-semibold " data-for-player="one">0</p>
+                <p class="display-1 score-two the-score fw-semibold " data-for-player="two">0</p>
             </div>
-            <div class="d-flex flex-row justify-content-" style="gap: 300px;">
-            <button class=" the-btn display-6 text-white bg-danger px-3" data-for-player="one">-</button>
-           <button class=" the-btn display-6 text-white bg-danger px-3" data-for-player="two">-</button>
-           </div>`;
+            <div class="container mt-3">
+             <div class="d-flex flex-row  min-btn-wrapper">
+            <button class=" the-btn-min min-btn text-white bg-danger " data-for-player="one">-</button>
+           <button class=" the-btn-min   min-btn text-white bg-danger " data-for-player="two">-</button>
+           </div>
+</div>
+           `;
 
         this.root.querySelectorAll(".the-btn").forEach(controlButton =>{
             controlButton.addEventListener("click", () =>{

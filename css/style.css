@@ -1,0 +1,29 @@
+body{
+    background-color: #fafafa;
+}
+button{
+    background-color:#fafafa;
+}
+.the-pict{
+   border: none;
+}
+.pict-wrapper{
+    padding-top: 80px;
+}
+.score-wrapper{
+    /*margin-left: 270px;*/
+    gap: 600px;
+}
+.min-btn-wrapper{
+    gap: 490px;
+    margin-left: 150px;
+}
+.the-btn-min{
+    font-size: 40px;
+    font-weight: bold;
+    width: 160px;
+    height: auto;
+    border: none;
+   padding: 1px;
+    /*margin-left: 200px;*/
+}
